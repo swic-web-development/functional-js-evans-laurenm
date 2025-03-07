@@ -11,3 +11,5 @@ console.log(greet())
 //New Way:  Arrow Functions
 const greetings = () => 'Hello, World!'
 console.log(greetings())
+
+//Callback Functions Practice
