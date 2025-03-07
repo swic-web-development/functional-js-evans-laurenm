@@ -74,3 +74,14 @@ const totalValue = backpackFUllOfAmmo.map((ammo) => {
 })
 
 console.log(totalValue)
+
+//Java Script Method
+
+const nums = [1, 2, 3, 4, 5]
+const doubledNumbs = []
+
+for (let i = 0; i < numbers.length; i++) {
+  doubledNumbers.push(`<li>${numbers[i] * 2}</li>`)
+}
+
+console.log(doubledNumbers.join('\n'))
