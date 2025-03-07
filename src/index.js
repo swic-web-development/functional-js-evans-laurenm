@@ -38,3 +38,20 @@ function triple(num) {
 doSomethingWithNumber(42, triple)
 
 console.log(doSomethingWithNumber(42, triple))
+
+//The MAP Method
+const numbers = [1, 2, 3, 4, 5]
+
+const doubledNumbers = numbers.map(function (number) {
+  return number * 2
+})
+
+console.log(doubledNumbers)
+
+//Arrow Function in Map
+
+const numbered = [1, 2, 3, 4, 5]
+
+const doubledNumbered = numbered.map((number) => number * 2)
+
+console.log(doubledNumbers)
