@@ -55,3 +55,22 @@ const numbered = [1, 2, 3, 4, 5]
 const doubledNumbered = numbered.map((number) => number * 2)
 
 console.log(doubledNumbers)
+
+//Map Method Practice
+const backpackFUllOfAmmo = [
+  { item: 'bullets', quantity: 30, priceEach: 0.5 },
+  { item: 'grenades', quantity: 5, priceEach: 0.02 },
+  { item: 'rockets', quantity: 2, priceEach: 5.0 },
+  { item: 'energy cell units', quantity: 10, priceEach: 1.0 },
+]
+
+function calculateOrderCost(order) {
+  return order.quantity * order.priceEach
+}
+const totalValue = backpackFUllOfAmmo.map((ammo) => {
+  console.log(ammo)
+
+  return 'kill'
+})
+
+console.log(totalValue)
