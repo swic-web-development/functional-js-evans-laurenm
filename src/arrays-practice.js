@@ -79,3 +79,37 @@ const totalValue = backpackFullOfAmmo.reduce((total, currentItem) => {
 
 // Output the final total value of all items in the backpack
 console.log(totalValue)
+
+//Code Challenge 2:
+
+const monsters = [
+  { name: 'Cacodemon', health: 400, damage: 35 },
+  { name: 'Baron of Hell', health: 1000, damage: 45 },
+  { name: 'Cyberdemon', health: 4000, damage: 125 },
+  { name: 'Hell Knight', health: 800, damage: 25 },
+  { name: 'Imp', health: 200, damage: 20 },
+  { name: 'Lost Soul', health: 100, damage: 10 },
+  { name: 'Pinky', health: 300, damage: 15 },
+  { name: 'Revenant', health: 500, damage: 30 },
+  { name: 'Spectre', health: 200, damage: 20 },
+  { name: 'Spider Mastermind', health: 2000, damage: 50 },
+  { name: 'Vile', health: 1000, damage: 40 },
+  { name: 'Zombie', health: 100, damage: 5 },
+  { name: 'Zombieman', health: 200, damage: 10 },
+]
+
+// Task 1: Create an array of monster names
+const monsterNames = monsters.map((monster) => monster.name)
+console.log(monsterNames) // Output: ['Cacodemon', 'Baron of Hell', 'Cyberdemon', ..., 'Zombieman']
+
+// Task 2: Find all monsters with health greater than 150
+const monstersWithHighHealth = monsters.filter((monster) => monster.health > 150)
+console.log(monstersWithHighHealth)
+
+// Task 3: Calculate the total health of all monsters
+const totalHealth = monsters.reduce((total, monster) => total + monster.health, 0)
+console.log(totalHealth) // Output: total health value
+
+// Task 4: Sort monsters by damage (highest to lowest)
+const monstersSortedByDamage = monsters.sort((a, b) => b.damage - a.damage)
+console.log(monstersSortedByDamage)
