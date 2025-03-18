@@ -57,3 +57,25 @@ console.log(allPlayersHaveMoreFragsThanDeaths)
 const sortedPlayers = players.sort((a, b) => b.frags - a.frags)
 
 console.log(sortedPlayers)
+
+//Code Challenge 1:
+
+// Array of items in the backpack, each with a quantity and price per item
+const backpackFullOfAmmo = [
+  { item: 'bullets', quantity: 10, priceEa: 0.5 },
+  { item: 'shotgun shells', quantity: 4, priceEa: 0.5 },
+  { item: 'rockets', quantity: 1, priceEa: 5.0 },
+  { item: 'energy cell units', quantity: 20, priceEa: 0.2 },
+]
+
+// Use the reduce method to calculate the total value of the backpack
+const totalValue = backpackFullOfAmmo.reduce((total, currentItem) => {
+  // For each item, calculate the value by multiplying quantity by price
+  const itemValue = currentItem.quantity * currentItem.priceEa
+
+  // Add the calculated item value to the running total
+  return total + itemValue
+}, 0) // Start the accumulator (total) at 0
+
+// Output the final total value of all items in the backpack
+console.log(totalValue)
